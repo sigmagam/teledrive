@@ -1,6 +1,6 @@
 {
   "name": "TeleDrive",
-  "description": "Free cloud storage via telegram",
+  "description": "Free cloud storage via Telegram",
   "keywords": [
     "cloud",
     "drive",
@@ -11,38 +11,44 @@
   ],
   "website": "https://teledriveapp.com",
   "repository": "https://github.com/mgilangjanuar/teledrive",
-
   "addons": [
     "heroku-postgresql"
   ],
   "env": {
     "ENV": {
       "description": "Hide the logs for production, default: develop. Read more at: https://teledriveapp.com/docs/Deployment/heroku",
-      "required": false
+      "required": false,
+      "value": "production"
     },
     "REACT_APP_API_URL": {
       "description": "Base URL for the API, default: '' (empty string).",
-      "required": false
+      "required": false,
+      "value": "https://api.teledriveapp.com"
     },
     "REACT_APP_TG_API_HASH": {
       "description": "Application hash from Telegram App (for experimental features).",
-      "required": true
+      "required": true,
+      "value": "a34bc44e79bbaf886fd6399792bc3ff1"
     },
     "REACT_APP_TG_API_ID": {
       "description": "Application ID from your Telegram App (for experimental features).",
-      "required": true
+      "required": true,
+      "value": "20053882"
     },
     "TG_API_HASH": {
       "description": "Application hash from Telegram App.",
-      "required": true
+      "required": true,
+      "value": "a34bc44e79bbaf886fd6399792bc3ff1"
     },
     "TG_API_ID": {
       "description": "Application ID from your Telegram App.",
-      "required": true
+      "required": true,
+      "value": "20053882"
     },
     "ADMIN_USERNAME": {
       "description": "Username Telegram for admin account.",
-      "required": true
+      "required": true,
+      "value": "epinprdw"
     },
     "USE_PSQL_HEROKU": {
       "description": "If we are using Heroku PSQL",
